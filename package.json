@@ -1,0 +1,103 @@
+{
+  "name": "neokex-fca",
+  "version": "4.5.3",
+  "module": "commonjs",
+  "types": "src/types/index.d.ts",
+  "description": "Advanced Facebook Chat API (FCA) for Node.js - Automate Facebook Messenger with real-time messaging, AI theme generation, and comprehensive bot features",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "src/",
+    "examples/",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "THEME_FEATURES.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoKEX/neokex-fca.git"
+  },
+  "author": "NeoKEX <contact@neokex.dev>",
+  "contributors": [
+    "NeoKEX Team"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NeoKEX/neokex-fca/issues"
+  },
+  "homepage": "https://github.com/NeoKEX/neokex-fca#readme",
+  "keywords": [
+    "facebook",
+    "chat",
+    "api",
+    "fca",
+    "neokex",
+    "neokex-fca",
+    "messenger",
+    "bot",
+    "automation",
+    "facebook-messenger",
+    "facebook-chat",
+    "messenger-bot",
+    "ai-theme",
+    "mqtt",
+    "realtime",
+    "websocket",
+    "facebook-api",
+    "chat-bot",
+    "messaging"
+  ],
+  "dependencies": {
+    "axios": "^1.13.2",
+    "axios-cookiejar-support": "^6.0.4",
+    "bluebird": "^3.7.2",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.1.2",
+    "deepdash": "^5.3.9",
+    "express": "^4.21.2",
+    "form-data": "^4.0.4",
+    "freeport": "^1.0.5",
+    "gradient-string": "^1.2.0",
+    "https-proxy-agent": "^7.0.6",
+    "install": "^0.13.0",
+    "jsonpath-plus": "^10.3.0",
+    "lodash": "^4.17.21",
+    "mqtt": "^3.0.0",
+    "node-cron": "^4.2.1",
+    "npmlog": "^7.0.1",
+    "sequelize": "^6.37.6",
+    "sqlite3": "^5.1.7",
+    "totp-generator": "^1.0.0",
+    "tough-cookie": "^6.0.0",
+    "undici": "^7.16.0",
+    "uuid": "^11.0.3",
+    "websocket-stream": "^5.3.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/express": "^4.17.25",
+    "@types/form-data": "^2.2.1",
+    "@types/node": "^22.19.0",
+    "@types/tough-cookie": "^4.0.5",
+    "eslint": "^9.39.1",
+    "mocha": "^11.7.5",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "validate": "npm pack --dry-run",
+    "prepack": "echo 'Preparing package for npm...'",
+    "test": "echo 'No tests configured yet'"
+  },
+  "overrides": {
+    "websocket-stream": {
+      "ws": "^8.18.3"
+    }
+  }
+}
